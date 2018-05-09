@@ -145,6 +145,7 @@ Currently the rkt upstream project does not maintain its own repository, so user
 upgrade manually.
 
 ### rpm-based 
+**Note:** The example keyserver argument should be omitted if you already have a keyserver configured or you do not trust the SKS Keyservers
 ```
 gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-key 18AD5014C99EF7E3BA5F6CE950BDD3E0FC8A365E
 wget https://github.com/rkt/rkt/releases/download/v1.30.0/rkt-1.30.0-1.x86_64.rpm
@@ -154,6 +155,7 @@ sudo rpm -Uvh rkt-1.30.0-1.x86_64.rpm
 ```
 
 ### deb-based
+**Note:** The example keyserver argument should be omitted if you already have a keyserver configured or you do not trust the SKS Keyservers
 ```
 gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-key 18AD5014C99EF7E3BA5F6CE950BDD3E0FC8A365E
 wget https://github.com/rkt/rkt/releases/download/v1.30.0/rkt_1.30.0-1_amd64.deb
